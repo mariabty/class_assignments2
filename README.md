@@ -1,4 +1,6 @@
 # class_assignments2
+PART 1
+
 EXPERIMENT 2: Styled Blog Post (CSS Styling)
 
 ● Task: Take the HTML from Experiment 1 or create a new simple blog post HTML, and
