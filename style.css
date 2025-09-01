@@ -16,6 +16,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  flex-wrap: wrap; /* ✅ lets nav items wrap on small screens */
 }
 
 .logo {
@@ -27,6 +28,9 @@ body {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
@@ -43,36 +47,22 @@ body {
   text-decoration: underline;
 }
 
-/* Hamburger Icon */
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-/* Responsive */
+/* Responsive tweak */
 @media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
   .nav-links {
-    display: none;
-    flex-direction: column;
-    background: pink;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 8px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
+    justify-content: center;
   }
 }
 
-/* Rest of your existing CSS */
+/* Rest of your CSS */
 header {
   background: pink;
   color: black;
